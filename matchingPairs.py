@@ -2,7 +2,7 @@ class node:
     def __init__(self,data):
         self.data=data
         self.next=None
-#alpha=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+alpha=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 mainList=[]
 input1=int(input())
 for i in range(input1):
@@ -22,7 +22,7 @@ for i in range(len(mainList)-1):
         for h in range(26):
             l.append(None)
         
-        temp2=mainList[c]
+          temp2=mainList[c]
         
         if len(temp1)==len(temp2):
               

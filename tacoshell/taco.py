@@ -58,15 +58,13 @@ if (1<=days<=100):
         
         day1=(input(""))
         a=day1.split()
-        if((0<=int(a[0])<=10**9) or (0<=int(a[1])<=10**9) or (0<int(a[2])<=10**9) or (0<=int(a[3])<=10**9)
-           ):
+        if((0<=int(a[0])<=10**9) or (0<=int(a[1])<=10**9) or (0<int(a[2])<=10**9) or (0<=int(a[3])<=10**9)):
             s=int(a[0])
             m=int(a[1])
             r=int(a[2])
             b=int(a[3])
             swap(m,r,b)
             function(s,m,r,b)
-            
             
             j=j+1
     i=0            

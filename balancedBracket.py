@@ -5,19 +5,28 @@ def is_matched(expression):
     stack=list()
     openBracket=['(','[','{']
     closeBracket=[')',']','}']
+    dict={')':'(',']':'[','}':'{'}
     
     for i in expression:
         if(i in openBracket):
             stack.append(i)
+            print (i)
+            
         elif(i in closeBracket):
             if (len(stack)==0):
                 flag=0
+                print ("len0")
             else:
                 bracket=stack.pop()
-                if (bracket!=i):
+                print ("pop")
+                print (i)
+                if (dict[i]!=bracket):
                     flag=0
+                    print("not matching")
+                    print (bracket)
+        print ("")
                     
-        return flag
+    return flag
     
     #print (expression[0])
 

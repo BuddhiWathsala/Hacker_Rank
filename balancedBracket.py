@@ -10,21 +10,17 @@ def is_matched(expression):
     for i in expression:
         if(i in openBracket):
             stack.append(i)
-            print (i)
             
         elif(i in closeBracket):
             if (len(stack)==0):
                 flag=0
-                print ("len0")
             else:
                 bracket=stack.pop()
-                print ("pop")
-                print (i)
                 if (dict[i]!=bracket):
                     flag=0
-                    print("not matching")
-                    print (bracket)
-        print ("")
+                    
+    if(len(stack)!=0):
+        flag=0
                     
     return flag
     
